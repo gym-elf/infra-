@@ -8,7 +8,7 @@
         path: "roles"
         state: directory
 
-    - name: clone the git repository into the roles directory\
+    - name: clone the git repository into the roles directory
       git:
         repo: 'git@github.com:gym-elf/ansible-roles.git'
         dest: "roles"

@@ -5,3 +5,5 @@ packages:
    - git
    - zip
    - htop 
+
+nginx_worker_connections: 512

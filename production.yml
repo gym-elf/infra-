@@ -4,4 +4,4 @@
     - { role: 'common' }
     - { role: 'docker' }
     - { role: 'nginx' }
-    - { role: 'swaptrasher' }
+  

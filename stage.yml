@@ -1,7 +1,8 @@
 ---
 - hosts: web
   roles:
-    - { role: 'common' }
+#    - { role: 'common' }
     - { role: 'docker' }
     - { role: 'nginx' }
+    - { role: 'package', tags: 'package' }
     

@@ -1,0 +1,10 @@
+---
+- hosts: all
+  roles:
+    - { role: 'common', tags: 'common' }
+    - { role: 'docker', tags: 'docker' }
+    - { role: 'nginx', tags: 'nginx' }
+    - { role: 'delegate' }
+#    - { role: 'package', tags: 'package' }
+#   - { role: 'test_vault' }
+#   - { role: 'vault' }

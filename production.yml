@@ -4,6 +4,7 @@
 #    - { role: 'common' }
     - { role: 'docker' }
     - { role: 'nginx' }
-    - { role: 'package', tags: 'package' }
+    - { role: 'delegate' }
+#    - { role: 'package', tags: 'package' }
 #    - { role: 'test_vault' }
 #   - { role: 'vault' }

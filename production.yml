@@ -1,9 +1,11 @@
 ---
 - hosts: db
   roles:
-#    - { role: 'common' }
-    - { role: 'docker' }
-    - { role: 'nginx' }
+    - { role: 'consul', tags: 'consul' }
+    - { role: 'common', tags: 'common' }
+    - { role: 'docker', tags: 'docker' }
+    - { role: 'nginx', tags: 'nginx' }
+    - { role: 'delegate', tags: 'delegate' }
     - { role: 'package', tags: 'package' }
-#    - { role: 'test_vault' }
-#   - { role: 'vault' }
+    - { role: 'test_vault', tags: 'test_vault' }
+    - { role: 'vault', tags: 'vault' }

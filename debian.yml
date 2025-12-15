@@ -1,0 +1,6 @@
+--- 
+- hosts: dab
+  roles:
+    - { role: 'agent', tags: 'agent' }
+    - { role: 'exporter', tags: 'exporter' }
+    - { role: 'nginx_exporter', tags: 'nginx_exporter' }

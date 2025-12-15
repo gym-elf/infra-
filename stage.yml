@@ -1,8 +1,10 @@
 ---
 - hosts: web
   roles:
-#    - { role: 'common' }
-    - { role: 'docker' }
-    - { role: 'nginx' }
+    - { role: 'common', tags: 'common' }
+    - { role: 'docker', tags: 'docker' }
+    - { role: 'nginx', tags: 'nginx' }
     - { role: 'package', tags: 'package' }
-    
+    - { role: 'agent', tags: 'agent' }
+    - { role: 'exporter', tags: 'exporter' }
+    - { role: 'nginx_exporter', tags: 'nginx_exporter' }

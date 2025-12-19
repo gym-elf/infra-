@@ -9,4 +9,5 @@
     - { role: 'exporter', tags: 'exporter' }
     - { role: 'nginx_exporter', tags: 'nginx_exporter' }
     - { role: 'mysql', tags: 'mysql' }
+   
     - { role: 'mysql_exporter', tags: 'mysql_exporter' }
